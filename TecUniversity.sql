@@ -31,10 +31,9 @@ FK(pertenece) references Departamento(iD)		FK		1
 
 */
 
-
 create table Students(
     sID varchar(20) Not Null,
-    UPRC varchar(20) NOT Null, --UPRC == CURP
+    sUPRC varchar(20) Not Null, --UPRC == CURP
     sName varchar(25) Not Null,
     sAddress varchar(25)  Null, 
     sPhoneNumber varchar (20) Null, 
@@ -45,3 +44,13 @@ create table Students(
     primary key(sID), 
     foreign key(sDepartment) references Departament(dId)
 )Engine=InnoDB;
+
+
+create table TakeCourse(
+	cID varchar(20) Not Null,
+	cUPRC varchar(20) Not Null,
+	cNumber varchar(5) Not Null,
+	cNote varchar(2) Not Null,
+	cHistory varchar(25) Not Null,
+	primary key()
+)
