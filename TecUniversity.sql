@@ -19,6 +19,11 @@ create table Department(
     primary key(dId)
 )Engine=InnoDB;
 
+/*
+Alumnos(Matrícula, curp, nombre, dirección, teléfono, sexo, fechaDeNacimiento, pertenece, carrera)
+    PK(Matrícula, curp)                             Grado		9
+    FK(pertenece) references Departamento(iD)		FK			1
+*/
 create table Students(
     sID varchar(20) Not Null,
     sUPRC varchar(20) NOT Null, --UPRC == CURP
@@ -39,6 +44,12 @@ CREATE TABLE Schedule(
     primary key(hId)
 )Engine=InnoDB;
 
+/*
+Profesor(id    , horarioDisponible)
+    PK(id)                            				Grado		1
+	FK(tiene) references Curso(id)            		FK			2
+	FK(tiene) references Grupo(número)
+*/
 CREATE TABLE Professor(
     pID varchar(20) Not Null,
     pUPRC varchar(20) NOT Null, --UPRC == CURP
@@ -57,3 +68,31 @@ CREATE TABLE ProfessorSchedule(
      foreign key (pID) references Professor(pId),
      foreign key (hId) references Schedule(hId)
 )Engine=InnoDB;
+
+/*
+TomaCurso(Matrícula, curp, número, calificación, historial)        
+    PK(Matrícula, curp, número)                    	Grado		4
+    FK(NúmeroGrupo) references Grupo(NúmeroGrupo)	FK        	2
+    FK(NúmeroCurso) references Grupo(NúmeroCurso)
+*/
+create table TakeCourse(
+	cID varchar(20) Not Null,
+	cUPRC varchar(20) Not Null,
+	cNumber varchar(5) Not Null,
+	cNote varchar(2) Not Null,
+	cHistory varchar(25) Not Null,
+	primary key(cID)
+)Engine=InnoDB;
+
+/*
+Grupo(Matricula, curp, ecoa, año, semestre, número)
+    PK(número)                        				Grado		6
+    FK(tiene) references Profesor(id)           	FK 			2
+    FK(tiene) references Curso(número)
+*/
+
+/*
+Curso(número, nombre, descripción, horas)
+    PK(número)                        				Grado		1
+    FK(ofrece) references Departamento(id)         	FK			3
+*/
