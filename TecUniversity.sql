@@ -48,7 +48,7 @@ CREATE TABLE Professor(
     pID varchar(20)
     pScheduleDisp DATETIME(6), --DUDA
     primary key (pID)
-)
+)Engine=InnoDB;
 
 /*
 TomaCurso(Matrícula, curp, número, calificación, historial)        
@@ -63,4 +63,4 @@ create table TakeCourse(
 	cNote varchar(2) Not Null,
 	cHistory varchar(25) Not Null,
 	primary key(cID)
-)
+)Engine=InnoDB;
