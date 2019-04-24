@@ -19,16 +19,11 @@ create table Department(
     primary key(dId)
 )Engine=InnoDB;
 
-<<<<<<< HEAD
 /*
 Alumnos(Matrícula, curp, nombre, dirección, teléfono, sexo, fechaDeNacimiento, pertenece, carrera)
-PK(Matrícula, curp)					Grado 		9
-FK(pertenece) references Departamento(iD)		FK		1
-
+PK(Matrícula, curp)									Grado		9
+FK(pertenece) references Departamento(iD)			FK			1
 */
-
-=======
->>>>>>> d912ffbb0b62a2d63a91175a3d6cda9d81f1c4bf
 create table Students(
     sID varchar(20) Not Null,
     sUPRC varchar(20) Not Null, --UPRC == CURP
@@ -39,22 +34,33 @@ create table Students(
     sBDate datetime(6) null, 
     sDepartment varchar(20) Not null, 
     sMajor varchar(20) Not Null,
-<<<<<<< HEAD
     primary key(sID), 
     foreign key(sDepartment) references Departament(dId)
 )Engine=InnoDB;
 
+/*
+Profesor(id    , horarioDisponible)
+    PK(id)                            				Grado		1
+	FK(tiene) references Curso(id)            		FK			2
+	FK(tiene) references Grupo(número)
+*/
+CREATE TABLE Professor(
+    pID varchar(20)
+    pScheduleDisp DATETIME(6), --DUDA
+    primary key (pID)
+)
 
+/*
+TomaCurso(Matrícula, curp, número, calificación, historial)        
+    PK(Matrícula, curp, número)                    	Grado		4
+    FK(NúmeroGrupo) references Grupo(NúmeroGrupo)	FK        	2
+    FK(NúmeroCurso) references Grupo(NúmeroCurso)
+*/
 create table TakeCourse(
 	cID varchar(20) Not Null,
 	cUPRC varchar(20) Not Null,
 	cNumber varchar(5) Not Null,
 	cNote varchar(2) Not Null,
 	cHistory varchar(25) Not Null,
-	primary key()
+	primary key(cID)
 )
-=======
-    primary key(sID, UPRC), 
-    foreign key(sDepartment) references Department(dId)
-)Engine=InnoDB;
->>>>>>> d912ffbb0b62a2d63a91175a3d6cda9d81f1c4bf
