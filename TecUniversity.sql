@@ -10,11 +10,6 @@
 --First line to create the database 
 CREATE Database TecUniversity;
 
-/*
-Departamento(id, nombre, numero, telefono, oficina)
-	PK(id)
-*/
-
 create table Department(
     dId varchar(20) Not Null,
     dName varchar (50) Not Null,
@@ -23,14 +18,6 @@ create table Department(
     dOffice varchar(20) Not Null,
     primary key(dId)
 )Engine=InnoDB;
-
-/*
-Alumnos(Matrícula, curp, nombre, dirección, teléfono, sexo, fechaDeNacimiento, pertenece, carrera)
-PK(Matrícula, curp)					Grado 		9
-FK(pertenece) references Departamento(iD)		FK		1
-
-*/
-
 
 create table Students(
     sID varchar(20) Not Null,
@@ -42,6 +29,6 @@ create table Students(
     sBDate datetime(6) null, 
     sDepartment varchar(20) Not null, 
     sMajor varchar(20) Not Null,
-    primary key(sID), 
-    foreign key(sDepartment) references Departament(dId)
+    primary key(sID, UPRC), 
+    foreign key(sDepartment) references Department(dId)
 )Engine=InnoDB;
