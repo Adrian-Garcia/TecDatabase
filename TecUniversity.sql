@@ -64,3 +64,16 @@ create table TakeCourse(
 	cHistory varchar(25) Not Null,
 	primary key(cID)
 )Engine=InnoDB;
+
+/*
+Grupo(Matricula, curp, ecoa, año, semestre, número)
+    PK(número)                        				Grado		6
+    FK(tiene) references Profesor(id)           	FK 			2
+    FK(tiene) references Curso(número)
+*/
+
+/*
+Curso(número, nombre, descripción, horas)
+    PK(número)                        				Grado		1
+    FK(ofrece) references Departamento(id)         	FK			3
+*/
