@@ -93,3 +93,10 @@ create table TakeCourse(
     foreign key(tcCourseNumber) references Course(cNumber),
     foreign key(tcGroupNumber) references Groupp(gNumber)
 )Engine=InnoDB;
+
+--Inserts 
+
+Insert Into Department values('4521', 'Departamento de Computación', '1','8110236541','100');
+Insert Into Department values('4522', 'Departamento de Química', '2','8110236361','200');
+Insert Into Department values('4523', 'Departamento de Electrónica', '3','8110236251','300');
+Insert Into Department values('4524', 'Departamento de Física', '4','8110236861','400');
