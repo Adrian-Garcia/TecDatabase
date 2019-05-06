@@ -105,3 +105,10 @@ Insert Into Students values('6231', 'CAMD000421HNLRV4','David Alonso Cantú', 'C
 Insert Into Students values('6232', 'VAGP990301HNLRF3','Paco Antonio Vargas', 'San Pedro', '8112369547', 'M','1999-06-02','4522','Chemical Engineer');
 Insert Into Students values('6233', 'ELTK980401HNLRG6','Elvis Tek', 'Santa Catarina', '8110523698', 'M','1989-04-18','4523','Robotics');
 Insert Into Students values('6234', 'MPLO950204HNLRT4','María Perez', 'Apodaca', '8110236984', 'F','1995-02-04','4524','Physics');
+--Schedule
+Insert Into Schedule values('1', '0000-00-00 07:30:00.000000');
+Insert Into Schedule values('2', '0000-00-00 08:30:00.000000');
+Insert Into Schedule values('3', '0000-00-00 09:30:00.000000');
+Insert Into Schedule values('4', '0000-00-00 10:30:00.000000');
+--Profesor 
+Insert Into Professor values('4578', '')
