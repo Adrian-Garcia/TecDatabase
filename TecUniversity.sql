@@ -129,4 +129,15 @@ Insert Into Course values('51', 'Huevassign', 'Resolucion de problemas en plataf
 Insert Into Course values('52', 'Algorritmos', 'Analisis y diseño de Algirritmos', '0000-00-00 08:30:00.000000', '4523');
 Insert Into Course values('53', 'Bases de Gatos', 'Acariciar Gatitos', '0000-00-00 07:30:00.000000', '4523');
 Insert Into Course values('54', 'Sepultura de Vatos', 'Creación y utilización de Estructura de datos', '0000-00-00 07:30:00.000000', '4524');
---
+--Group
+Insert Into Groupp values('200', '300', '4578', '50', '100', 'PEPP541016HASCIP07', '0000-00-00 07:30:00.000000', '4');
+Insert Into Groupp values('201', '301', '4579', '51', '100', 'ELPLA541016HASCP07', '0000-00-00 07:30:00.000000', '5');
+Insert Into Groupp values('202', '302', '4580', '52', '100', 'PER4541016HASCIP07', '0000-00-00 07:30:00.000000', '3');
+Insert Into Groupp values('203', '303', '4581', '53', '100', 'ELPU541016HASCIP07', '0000-00-00 07:30:00.000000', '4');
+Insert Into Groupp values('204', '304', '4582', '53', '100', 'PEPLA54101HASCIP07', '0000-00-00 07:30:00.000000', '6');
+--TakeCourse
+Insert Into TakeCourse values('50000', 'ASDLADDHJ1H5646DF5', '50', '200', '10', 'Aqui no se que va equis de');
+Insert Into TakeCourse values('50001', 'ASD8F99A8S8DSAH8DF', '51', '201', '9', 'Aqui no se que va equis de');
+Insert Into TakeCourse values('50001', 'LKJ2KLJ34JK2L3K344', '52', '202', '8', 'Aqui no se que va equis de');
+Insert Into TakeCourse values('50001', 'JH0JD9FG9SFGSD0FG9', '53', '203', '7', 'Aqui no se que va equis de');
+Insert Into TakeCourse values('50001', 'LKJ45J6KJ45HK6HK45', '54', '204', '6', 'Aqui no se que va equis de');
