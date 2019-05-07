@@ -95,6 +95,7 @@ CREATE Database TecUniversity;
     )Engine=InnoDB;
 
 --Inserts 
+
 --Department
 Insert Into Department values('4521', 'Computer Department', '1','8110236541','100');
 Insert Into Department values('4522', 'Chemistry Department', '2','8110236361','200');
@@ -107,4 +108,23 @@ Insert Into Students values('6232', 'VAGP990301HNLRF3','Paco Antonio Vargas', 'S
 Insert Into Students values('6233', 'ELTK980401HNLRG6','Elvis Tek', 'Santa Catarina', '8110523698', 'M','1989-04-18','4523','Robotics');
 Insert Into Students values('6234', 'MPLO950204HNLRT4','María Perez', 'Apodaca', '8110236984', 'F','1995-02-04','4524','Physics');
 
-Insert Into 
+--Schedule
+Insert Into Schedule values('1', '0000-00-00 07:30:00.000000');
+Insert Into Schedule values('2', '0000-00-00 08:30:00.000000');
+Insert Into Schedule values('3', '0000-00-00 09:30:00.000000');
+Insert Into Schedule values('4', '0000-00-00 10:30:00.000000');
+Insert Into Schedule values('5', '0000-00-00 12:30:00.000000');
+
+--Profesor 
+Insert Into Professor values('4578', 'PEPP541016HASCIP07', 'Pepe Pecas', 'Por aquí', '4619293210', 'M', '1954-10-16');
+Insert Into Professor values('4579', 'PEPLA541016HASCP07', 'Elba Lazo', 'Por ahí', '8271029291', 'F', '1988-10-16');
+Insert Into Professor values('4580', 'PER4541016HASCIP07', 'Pepe Roni', 'Por allá', '8372918539', 'M', '1990-10-16');
+Insert Into Professor values('4581', 'PEPU541016HASCIP07', 'Elsa Pato', 'Por acuyá', '75831983829', 'F', '1970-10-16');
+Insert Into Professor values('4582', 'PEPLA54101HASCIP07', 'Pepe Roni', 'Hasta Cumbres...', '9381927492', 'M', '1989-10-16');
+
+--ProfessorSchedule
+Insert Into ProfessorSchedule values('4578', '1');
+Insert Into ProfessorSchedule values('4579', '2');
+Insert Into ProfessorSchedule values('4580', '3');
+Insert Into ProfessorSchedule values('4581', '4');
+Insert Into ProfessorSchedule values('4582', '5');
