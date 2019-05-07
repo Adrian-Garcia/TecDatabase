@@ -100,8 +100,11 @@ Insert Into Department values('4521', 'Computer Department', '1','8110236541','1
 Insert Into Department values('4522', 'Chemistry Department', '2','8110236361','200');
 Insert Into Department values('4523', 'Electronic Department', '3','8110236251','300');
 Insert Into Department values('4524', 'Physics Department', '4','8110236861','400');
+
 --Students
 Insert Into Students values('6231', 'CAMD000421HNLRV4','David Alonso Cantú', 'Cumbres', '8115822516', 'M','2000-04-21','4521','Computer Science');
 Insert Into Students values('6232', 'VAGP990301HNLRF3','Paco Antonio Vargas', 'San Pedro', '8112369547', 'M','1999-06-02','4522','Chemical Engineer');
 Insert Into Students values('6233', 'ELTK980401HNLRG6','Elvis Tek', 'Santa Catarina', '8110523698', 'M','1989-04-18','4523','Robotics');
 Insert Into Students values('6234', 'MPLO950204HNLRT4','María Perez', 'Apodaca', '8110236984', 'F','1995-02-04','4524','Physics');
+
+Insert Into 
