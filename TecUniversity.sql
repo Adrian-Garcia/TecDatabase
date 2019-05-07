@@ -140,8 +140,8 @@ Insert Into Groupp values('202', '302', '4580', '52', '100', 'PER4541016HASCIP07
 Insert Into Groupp values('203', '303', '4581', '53', '100', 'ELPU541016HASCIP07', '0000-00-00 07:30:00.000000', '4');
 Insert Into Groupp values('204', '304', '4582', '53', '100', 'PEPLA54101HASCIP07', '0000-00-00 07:30:00.000000', '6');
 --TakeCourse
-Insert Into TakeCourse values('50000', 'ASDLADDHJ1H5646DF5', '50', '200', '10', 'Aqui no se que va equis de');
-Insert Into TakeCourse values('50001', 'ASD8F99A8S8DSAH8DF', '51', '201', '9', 'Aqui no se que va equis de');
-Insert Into TakeCourse values('50001', 'LKJ2KLJ34JK2L3K344', '52', '202', '8', 'Aqui no se que va equis de');
-Insert Into TakeCourse values('50001', 'JH0JD9FG9SFGSD0FG9', '53', '203', '7', 'Aqui no se que va equis de');
-Insert Into TakeCourse values('50001', 'LKJ45J6KJ45HK6HK45', '54', '204', '6', 'Aqui no se que va equis de');
+Insert Into TakeCourse values('50000', 'ASDLADDHJ1H5646DF5', '300', '50', '10', 'Aqui no se que va equis de');
+Insert Into TakeCourse values('50001', 'ASD8F99A8S8DSAH8DF', '301', '51', '9', 'Aqui no se que va equis de');
+Insert Into TakeCourse values('50002', 'LKJ2KLJ34JK2L3K344', '302', '52', '8', 'Aqui no se que va equis de');
+Insert Into TakeCourse values('50003', 'JH0JD9FG9SFGSD0FG9', '303', '53', '7', 'Aqui no se que va equis de');
+Insert Into TakeCourse values('50004', 'LKJ45J6KJ45HK6HK45', '304', '54', '6', 'Aqui no se que va equis de');
