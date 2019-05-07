@@ -117,14 +117,31 @@ Insert Into Schedule values('5', '0000-00-00 12:30:00.000000');
 
 --Profesor 
 Insert Into Professor values('4578', 'PEPP541016HASCIP07', 'Pepe Pecas', 'Por aquí', '4619293210', 'M', '1954-10-16');
-Insert Into Professor values('4579', 'PEPLA541016HASCP07', 'Elba Lazo', 'Por ahí', '8271029291', 'F', '1988-10-16');
+Insert Into Professor values('4579', 'ELPLA541016HASCP07', 'Elba Lazo', 'Por ahí', '8271029291', 'F', '1988-10-16');
 Insert Into Professor values('4580', 'PER4541016HASCIP07', 'Pepe Roni', 'Por allá', '8372918539', 'M', '1990-10-16');
-Insert Into Professor values('4581', 'PEPU541016HASCIP07', 'Elsa Pato', 'Por acuyá', '75831983829', 'F', '1970-10-16');
-Insert Into Professor values('4582', 'PEPLA54101HASCIP07', 'Pepe Roni', 'Hasta Cumbres...', '9381927492', 'M', '1989-10-16');
-
+Insert Into Professor values('4581', 'ELPU541016HASCIP07', 'Elsa Pato', 'Por acuyá', '75831983829', 'F', '1970-10-16');
+Insert Into Professor values('4582', 'PEPLA54101HASCIP07', 'Pepe Lotas', 'Hasta Cumbres...', '9381927492', 'M', '1989-10-16');
 --ProfessorSchedule
 Insert Into ProfessorSchedule values('4578', '1');
 Insert Into ProfessorSchedule values('4579', '2');
 Insert Into ProfessorSchedule values('4580', '3');
 Insert Into ProfessorSchedule values('4581', '4');
 Insert Into ProfessorSchedule values('4582', '5');
+--Course
+Insert Into Course values('50', 'Sepultura de Vatos', 'Creación y utilización de Estructura de datos', '0000-00-00 07:30:00.000000', '4521');
+Insert Into Course values('51', 'Huevassign', 'Resolucion de problemas en plataforma', '0000-00-00 10:30:00.000000', '4522');
+Insert Into Course values('52', 'Algorritmos', 'Analisis y diseño de Algirritmos', '0000-00-00 08:30:00.000000', '4523');
+Insert Into Course values('53', 'Bases de Gatos', 'Acariciar Gatitos', '0000-00-00 07:30:00.000000', '4523');
+Insert Into Course values('54', 'Sepultura de Vatos', 'Creación y utilización de Estructura de datos', '0000-00-00 07:30:00.000000', '4524');
+--Group
+Insert Into Groupp values('200', '300', '4578', '50', '100', 'PEPP541016HASCIP07', '0000-00-00 07:30:00.000000', '4');
+Insert Into Groupp values('201', '301', '4579', '51', '100', 'ELPLA541016HASCP07', '0000-00-00 07:30:00.000000', '5');
+Insert Into Groupp values('202', '302', '4580', '52', '100', 'PER4541016HASCIP07', '0000-00-00 07:30:00.000000', '3');
+Insert Into Groupp values('203', '303', '4581', '53', '100', 'ELPU541016HASCIP07', '0000-00-00 07:30:00.000000', '4');
+Insert Into Groupp values('204', '304', '4582', '53', '100', 'PEPLA54101HASCIP07', '0000-00-00 07:30:00.000000', '6');
+--TakeCourse
+Insert Into TakeCourse values('50000', 'ASDLADDHJ1H5646DF5', '50', '200', '10', 'Aqui no se que va equis de');
+Insert Into TakeCourse values('50001', 'ASD8F99A8S8DSAH8DF', '51', '201', '9', 'Aqui no se que va equis de');
+Insert Into TakeCourse values('50001', 'LKJ2KLJ34JK2L3K344', '52', '202', '8', 'Aqui no se que va equis de');
+Insert Into TakeCourse values('50001', 'JH0JD9FG9SFGSD0FG9', '53', '203', '7', 'Aqui no se que va equis de');
+Insert Into TakeCourse values('50001', 'LKJ45J6KJ45HK6HK45', '54', '204', '6', 'Aqui no se que va equis de');
